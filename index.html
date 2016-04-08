@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Adivina</title>
+  <link rel="stylesheet" media="not screen and (device-width: 1200px) and (device-height: 900px)"
+        href="lib/sugar-web/graphics/css/sugar-96dpi.css">
+  <link rel="stylesheet" media="screen and (device-width: 1200px) and (device-height: 900px)"
+        href="lib/sugar-web/graphics/css/sugar-200dpi.css">
+  <link rel="stylesheet" href="css/activity.css">
+  <script data-main="js/loader" src="lib/require.js"></script>
+  <script  type="text/javascript"src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/palabras_animales.js"></script>
+  <script type="text/javascript" src="js/palabras_cosas.js"></script>
+  <script type="text/javascript" src="js/palabras_paises.js"></script>
+  <script type="text/javascript" src="js/palabras_plantas.js"></script>
+  <script type="text/javascript" src="js/palabras_sustantivos.js"></script>
+  <script type="text/javascript" src="js/palabras_valores.js"></script>
+  <script type="text/javascript" src="js/palabras_verbos.js"></script>
+
+</head>
+
+<body>
+  <div id="main-toolbar" class="toolbar">
+    <button class="toolbutton" id="activity-button" title="Adivina Activity"></button>
+    <button class="toolbutton pull-right" id="stop-button" title="Stop"></button>
+  </div>
+
+  <div id="canvas">
+
+    <div id="menu_personaje">
+        <h1 class="comun">Elije un personaje:</h1>
+        <table class="personajes">
+          <tr>
+            <td><input type="image" id="1" class="pers" src="resources/personaje_1/00.png" /></td>
+            <td><input type="image" id="2" class="pers" src="resources/personaje_2/00.png" /></td>
+            <td><input type="image" id="3" class="pers" src="resources/personaje_3/00.png" /></td>
+          </tr>
+        </table>
+        <table class="personajes">
+          <tr>
+            <td><input type="image" id="4" class="pers" src="resources/personaje_4/00.png" /></td>
+            <td><input type="image" id="5" class="pers" src="resources/personaje_5/00.png" /></td>
+            <td><input type="image" id="6" class="pers" src="resources/personaje_6/00.png" /></td>
+          </tr>
+        </table>
+    </div>
+    <div id="menu_tema" class="hidden">
+      <h1 class="comun">Bienvenido!!</h1>
+      <div class="comun">
+        <input type="image" id="jugador" />
+      </div>
+      <div id="content_niveles">
+        <table id="niveles" class="personajes">
+          <tr>
+            <td><button id="animales" class="nivel">Animales</button></td>
+            <td><button id="verbos" class="nivel">Verbos</button></td>
+          </tr>
+          <tr>
+            <td><button id="plantas" class="nivel">Plantas</button></td>
+            <td><button id="cosas" class="nivel">Cosas</button></td>
+          </tr>
+          <tr>
+            <td><button id="paises" class="nivel">Países</button></td>
+            <td><button id="valores" class="nivel">Valores</button></td>
+          </tr>
+          <tr>
+            <td><button id="sustantivos" class="nivel">Sustantivos</button></td>
+            <td><button id="nivel_versus">Juega con tus amigos</button></td>
+          </tr>
+        </table>
+      </div>
+      <div id="buttonGroup_niveles">
+        <button id="cambiar" class="bg_nivel">Cambiar Personaje</button>
+      </div>
+    </div>
+    <div id="juego" class="hidden">
+      <h1 class="comun">Adivina!!!</h1>
+
+      <!--**************************************-->
+      <div id="palabra" class="comun">
+
+      </div>
+      <br>
+      <div id="form" class="comun">
+        <input type="text" id="intento">
+        <br>
+        <button id="buttonAgregar">Agregar</button>
+      </div>
+      <div id="buttonAgain" class="comun hidden">
+        <p id="sig" class="info"></p>
+        <button id="again" class="bg_nivel">Nuevo Juego</button>
+      </div>
+      <!--**************************************-->
+      <br>
+      <table id="contentJuego">
+        <tr>
+          <td>
+            <div class="comun columnaJuego">
+              <input type="image" id="sinDientes">
+            </div>
+          </td>
+          <td>
+            <div id="info_ayuda" class="columnaJuego">
+              <p id="textError" class="error hidden comun titulo_info"></p>
+              <div class="info comun">
+                <p class="titulo_info">Letras usadas</p>
+                <div id="utilizadas" class="comun"></div>
+              </div>
+              <div id="pistaGroup" class="comun">
+                <h4>Pista: </h4><h4 id="pista"></h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div id="buttonGroup_niveles">
+        <button id="cambiarNivel" class="bg_nivel">Cambiar Nivel</button>
+      </div>
+    </div>
+    <div id="versus" class="hidden comun">
+      <h1 class="comun">Juega con un amigo</h1>
+      <br>
+      <p id="info_versus" class="info"><i>Ingresa una <b>Palabra</b>, su significado y una pista. Pulsa <b>Jugar</b> y veremos si tus amigos pueden adivinarla!!</i></p>
+      <div id="form2" class="comun">
+        <p>Palabra:</p>
+        <input type="text" id="palabra_versus">
+        <br>
+        <p>Pista:</p>
+        <input type="text" id="pista_versus">
+        <br>
+        <p>Significado</p>
+        <input type="text" id="significado_versus">
+        <br>
+        <br>
+        <button id="jugar_versus" class="bg_nivel">Jugar</button>
+      </div>
+      <button id="cambiar_nivel_versus" class="bg_nivel">Cambiar Nivel</button>
+    </div>
+
+  </div>
+</body>
+
+</html>

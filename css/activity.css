@@ -1,0 +1,129 @@
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+#canvas{
+	background-color: rgba(59, 161, 136, 255);
+}
+
+.comun{
+	text-align: center;
+}
+
+.error{
+	color: red;
+	font-weight: bold;
+	font-size: 110%;
+}
+.hidden{
+	display: none;
+}
+.letras{
+	display: inline;
+}
+.letrasO{
+	display: inline;
+	font-size: 150%;
+}
+.letrasEncontradas{
+	display: inline;
+	font-size: 400%;
+}
+.again{
+	color: red;
+	font-weight: bold;
+}
+/***********************************/
+.personajes{
+	padding: 3%;
+	width: 100%;
+}
+.personajes tr td{
+	text-align: center;
+}
+.p_over{
+	background-color: rgba(58, 160, 159, 250);
+	border-radius: 15%;
+	border-style: solid;
+	border-color: white;
+}
+#content_niveles{
+	padding: 5%;
+}
+#niveles{
+	background-color: rgba(58, 160, 159, 250);
+	border-style: dashed;
+	border-radius: 20%;
+	border-color: white;
+}
+#niveles tr td{
+	width: 50%;
+}
+.nivel{
+	background-color: black;
+	font-weight: bold;
+	width: 100%;
+}
+#nivel_versus{
+	background-color: black;
+	font-weight: bold;
+	width: 100%;
+}
+#buttonGroup_niveles{
+	text-align: center;
+	padding: 3%;
+}
+.bg_nivel{
+	color: black;
+	font-weight: bold;
+}
+#pistaGroup{
+	margin-top: 3%;
+	margin-bottom: 5%;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-style: solid;
+	border-radius: 25%;
+}
+#pistaGroup h4{
+	display: inline;
+}
+.info{
+	font-size: 150%;
+}
+#contentJuego{
+	width: 100%;
+}
+#contentJuego tr td{
+	width: 45%;
+}
+#form2{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-size: 200%;
+}
+#palabra_versus, #pista_versus, #significado_versus{
+	width: 100%;
+}
+#jugar_versus{
+	width: 70%;
+}
+#info_versus{
+	background-color: rgba(58, 160, 159, 250);
+	border-style: dashed;
+	border-radius: 20%;
+	border-color: white;
+	padding: 0.5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+#info_ayuda{
+	font-size: 200%;
+}
+.titulo_info{
+	margin-top: 0%;
+	margin-bottom: 2%;
+}

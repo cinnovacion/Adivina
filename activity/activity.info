@@ -1,0 +1,6 @@
+[Activity]
+name = Adivina
+activity_version = 2
+bundle_id = org.sugarlabs.Adivina
+exec = sugar-activity-web
+icon = icono
